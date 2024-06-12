@@ -6,13 +6,21 @@ keywords: compose, compose specification, services, compose file reference
 
 ## Version top-level element (obsolete)
 
-The top-level `version` property is defined by the Compose Specification for backward compatibility. It is only informative and you'll receive a warning message that it is obsolete if used. 
+The top-level `version` property is defined by the Compose Specification for backward compatibility.
+It is only informative and you'll receive a warning message that it is obsolete if used. 
 
-Compose doesn't use `version` to select an exact schema to validate the Compose file, but
-prefers the most recent schema when it's implemented.
+トップレベルの `version` プロパティは Compose Specification によって下位互換性のために定義されています。
+これはインフォーマルであり、使用すると時代遅れであるという警告メッセージが表示されます。
 
-Compose validates whether it can fully parse the Compose file. If some fields are unknown, typically
-because the Compose file was written with fields defined by a newer version of the Specification, you'll receive a warning message. 
+Compose doesn't use `version` to select an exact schema to validate the Compose file, but prefers the most recent schema when it's implemented.
+
+Compose は `version` を使って Compose ファイルを検証するスキーマを選択することはありません。
+
+Compose validates whether it can fully parse the Compose file.
+If some fields are unknown, typically because the Compose file was written with fields defined by a newer version of the Specification, you'll receive a warning message. 
+
+Compose は Compose ファイルを完全に解析できるかどうかを検証します。
+いくつかのフィールドが不明な場合、通常は Compose ファイルが新しいバージョンの仕様で定義されたフィールドで書かれているため、警告メッセージが表示されます。
 
 ## Name top-level element
 

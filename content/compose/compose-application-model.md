@@ -9,6 +9,8 @@ aliases:
 
 Docker Compose relies on a YAML configuration file, usually named `compose.yaml`. 
 
+Docker Composeは通常`compose.yaml`という名前のYAML設定ファイルに依存しています。
+
 The `compose.yaml` file follows the rules provided by the [Compose Specification](compose-file/_index.md) in how to define multi-container applications. This is the Docker Compose implementation of the formal [Compose Specification](https://github.com/compose-spec/compose-spec). 
 
 {{< accordion title="The Compose application model" >}}
@@ -42,6 +44,10 @@ You then interact with your Compose application through the [Compose CLI](refere
 The default path for a Compose file is `compose.yaml` (preferred) or `compose.yml` that is placed in the working directory.
 Compose also supports `docker-compose.yaml` and `docker-compose.yml` for backwards compatibility of earlier versions.
 If both files exist, Compose prefers the canonical `compose.yaml`.
+
+Composeファイルのデフォルトパスは `compose.yaml` (推奨) または `compose.yml` で、作業ディレクトリに配置されます。
+Composeは以前のバージョンとの互換性を保つために、`docker-compose.yaml`と`docker-compose.yml`もサポートしています。
+両方のファイルが存在する場合、Composeは正規の`compose.yaml`を優先します。
 
 You can use [fragments](compose-file/10-fragments.md) and [extensions](compose-file/11-extension.md) to keep your Compose file efficient and easy to maintain.
 
